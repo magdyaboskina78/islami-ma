@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami_aou/my_theme_data.dart';
 import 'package:islami_aou/tabs/ahadeth_tab.dart';
 import 'package:islami_aou/tabs/quran_tab.dart';
+import 'package:islami_aou/tabs/radio.dart';
 import 'package:islami_aou/tabs/sebha_tab.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -53,6 +54,10 @@ int index=0;
                 BottomNavigationBarItem(
                     icon: ImageIcon(AssetImage("assets/images/sebha_icon.png"))
                 ,label: "Ahadeth", backgroundColor: MyThemeData.primaryColor),
+                BottomNavigationBarItem(
+                    icon: ImageIcon(AssetImage("assets/images/radio_blue.png"))
+                ,label: "Radio", backgroundColor: MyThemeData.primaryColor),
+    
               ],
 
 
@@ -69,7 +74,8 @@ int index=0;
 
     QuranTab(),
     SebhaTab(),
-    AhadethTab()
+    AhadethTab(),
+    RadioTab()
 
 
   ];
